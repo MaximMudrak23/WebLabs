@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+header
+{
+    background-image: url(https://i.pinimg.com/736x/b8/3e/e1/b83ee1327dd271af0e6a5767e3aca9e0.jpg);
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+a
+{
+    font-size: 40px;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #FFCF48;
+    text-decoration: none;
+}
+
+li
+{
+    display: inline;
+}
+
+/* Стилізація прозорого блоку */
+.transparent-box {
+    position: absolute;
+    top: 45%; /* Встановлюємо вертикальне положення*/
+    left: 30%; /* Встановлюємо горизонтальне положення*/
+    transform: translate(-50%, -50%); /* Зміщення, щоб вирівняти центр блоку */
+    background-color: rgba(0, 0, 0, 0.75); /* Прозорий чорний колір з прозорістю */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Зменшення відступу між абзацами */
+.transparent-box p {
+    margin: 10px 0; /* Встановлюємо вертикальний відступ в 5px, а горизонтальний - 0 */
+    display: block;
+
+     /* Змінити шрифт та розмір тексту */
+     font-family: Arial, sans-serif; /* Змінити шрифт (Arial) */
+     font-style: italic;
+     font-size: 24px; /* Змінити розмір тексту (16px) */
+}
+
+.transparent-box address {
+    margin: 5;
+    font-size: 20px;
+}
+
+.transparent-box img {
+    width: 200px; /* Задаємо ширину в 200 пікселів */
+    height: 300px; /* Задаємо висоту в 150 пікселів */
+}
+
+button {
+    margin-top: 20px; /* Відступ між текстом і кнопкою */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Загальні стилі для сторінки */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Колір фону сторінки (чорний) */
+}
+
+#box1 {
+    top: 45%;
+    left: 35%;
+}
+
+#box2 {
+    top: 45%;
+    left: 65%;
+}
+
+#news1 {
+    top: 45%;
+    left: 50%;
+}
