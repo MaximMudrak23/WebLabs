@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Lab # 5</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <style>
+    html 
+    {
+      background-image: url(src/Hogwarts.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <header align = "center">
+        <ul class="menuul">
+            <li class="menuli"><a class="menua" href="index.html">Головна</a></li>
+            <li class="menuli"><a class="menua" href="index2.html">Каталог</a></li>
+            <li class="menuli"><a class="menua" href="index3.html">Новини про бібліотеку</a></li>
+            <li class="menuli"><a class="menua" href="index4.html">Всі закляття Хогвартсу</a></li>
+            <li class="menuli"><a class="menua" href="index5.html">Наш персонал</a></li>
+            <li class="menuli"><a class="menua" href="index6.html">Розклад</a></li>
+        </ul>
+    </header>
+
+    <div class="transparent-box">
+        <p>
+        Дякую, що завітали на нашу чарівну сторінку<br>
+        У нас ви зможете придбати сотні книжок<br>
+        за маленьку ціну<br><br>
+        
+        Також у нас часто проходять різного роду<br>
+        евенти де ви можете виграти призи<br><br>
+        
+        Зараз у нас діє магічна акція<br>
+        <q>Створи себе у хогвартсі</q> де ви можете<br>
+        створити себе та дізнатись до якого альянсу<br>
+        ви належите<br><br>
+
+    <address>Телефон: 0501543245</address>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<address>Адреса: Вул. Рівенська 16</address>
+        </p>
+    </div>
+
+    <div class="transparent-box" id="lab5table1">
+        <p class="newp2">Тут можна зареєструватись на сайті</p>
+        
+        <form action="#" method="get" dir="auto" title="Форма для реєстрації на сайті" target="_blank" name="registration" id="lab5form1">
+            <div class="form-row">
+                <label for="username">Ім'я користувача:</label>
+                <input type="text" name="username" value="">
+            </div>
+        
+            <div class="form-row">
+                <label for="login">Логін:</label>
+                <input type="text" name="login" value="">
+            </div>
+        
+            <div class="form-row">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" value="">
+            </div>
+        
+            <div class="form-row">
+                <label for="city">Оберіть ваше місто</label>
+                <select name="city" id="">
+                    <option value="city1">Чернівці</option>
+                    <option value="city2">Івано-Франківськ</option>
+                    <option value="city3">Львів</option>
+                    <option value="city4">Півтава</option>
+                    <option value="city5">Хмельницький</option>
+                </select>
+            </div>
+        
+            <div class="form-row">
+                <label for="age">Скільки тобі років?</label>
+                <select name="age" id="">
+                    <optgroup>
+                        <option value="">Менше 10-ти</option>
+                        <option value="">Більше 10-ти</option>
+                    </optgroup>
+                    <optgroup>
+                        <option value="">Менше 18-ти</option>
+                        <option value="">Більше 18-ти</option>
+                    </optgroup>
+                </select>
+            </div>
+        </form>
+
+        <br>
+
+        <label for="age">Я не знаю скільки мені рочків</label>
+        <form oninput="result.value = a.valueAsNumber + b.valueAsNumber">
+            <input type="number" id="a" name="a" value="0">
+            +
+            <input type="number" id="b" name="b" value="0">
+            =
+            <output name="result"></output>
+        </form>
+
+        <br>
+        
+        <details>
+            <summary>Клікніть, щоб розгорнути список</summary>
+            <p class="newp2">Дякуємо що поцікавились цією вкладинкою</p>
+            <progress max="100" value="50"></progress>
+        </details>
+        
+        <br>
+
+        <p class="newp2">Завантажити фото</p>
+        <input type="file" name="photo" id="lab5photo" accept="image/jpeg, image/png" style="padding: 10px;" formnovalidate formmethod="get" pattern="" autocomplete="off" required multiple>
+
+        <p class="newp2">Введіть інформацію про себе</p>
+        <textarea name="" id="" cols="50" rows="10"></textarea>
+
+        <button class="menubutton" type="reset" formmethod="get" formtarget="_blank" autofocus formnovalidate>Зареєструватись</button>
+    </div>
+</body>
+</html>
